@@ -7,7 +7,7 @@ Nom : Castaneda Aguilar
 
 Numéro d'étudiant : 1977741
 
-Url du site : https://ottonielca.github.io/Labo3_Multiplatforme/tabs/current
+Url du site : [https://ottonielca.github.io/Labo3_Multiplatforme/tabs/current](https://ottonielca.github.io/Labo3_Multiplatforme)
 
 Résultat : / 20
 
