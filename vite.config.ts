@@ -7,7 +7,11 @@ export default defineConfig({
   base: '/Labo3_Multiplatforme/',
   build: {
     outDir: 'docs',
-    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   resolve: {
     alias: {

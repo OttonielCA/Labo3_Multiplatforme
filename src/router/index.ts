@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue';
+import CurrentWeather from '../views/CurrentWeather.vue';
+import HourlyForecast from '../views/HourlyForecast.vue';
+import DailyForecast from '../views/DailyForecast.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/current'
   },
   {
-    path: '/Labo3_Multiplatforme/',  // Ajout de cette route
+    path: '/Labo3_Multiplatforme/',
     redirect: '/tabs/current'
   },
   {
@@ -21,22 +24,22 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'current',
-        component: () => import('@/views/CurrentWeather.vue')
+        component: CurrentWeather  // Import statique
       },
       {
         path: 'hourly',
-        component: () => import('@/views/HourlyForecast.vue')
+        component: HourlyForecast  // Import statique
       },
       {
         path: 'daily',
-        component: () => import('@/views/DailyForecast.vue')
+        component: DailyForecast  // Import statique
       }
     ]
   }
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/Labo3_Multiplatforme/'),  // Chemin de base explicite
   routes
 });
 
