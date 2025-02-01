@@ -4,9 +4,9 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/Labo3_Multiplatforme/',  
+  base: '/Labo3_Multiplatforme/',
   build: {
-    outDir: 'docs'
+    outDir: './docs'  // Ajout du ./ pour être sûr
   },
   resolve: {
     alias: {
