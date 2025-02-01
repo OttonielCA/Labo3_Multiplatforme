@@ -8,6 +8,10 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/current'
   },
   {
+    path: '/Labo3_Multiplatforme/',  // Ajout de cette route
+    redirect: '/tabs/current'
+  },
+  {
     path: '/tabs/',
     component: TabsPage,
     children: [
@@ -32,7 +36,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),  // Modifié ici
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 });
 

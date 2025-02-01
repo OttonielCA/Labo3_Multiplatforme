@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [vue()],
   base: '/Labo3_Multiplatforme/',
   build: {
-    outDir: './docs'  // Ajout du ./ pour être sûr
+    outDir: 'docs',
+    assetsDir: 'assets',
   },
   resolve: {
     alias: {
